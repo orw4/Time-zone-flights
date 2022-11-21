@@ -2,8 +2,6 @@
 # returns the other hour (or gets the take off and landing hours and returns the flight length)
 # 13/07/2022
 
-#TODO find the time zones in the internet instead of asking
-
 def main():
     question = input("What are you looking for? the length of the flight, the take off hour or the landing hour? ")
     if not("off" in question or "land" in question or "length" in question):
@@ -26,7 +24,7 @@ def main():
 
 # Find the time zone of a country
 def timezone(country):
-    timezone0 = int(input("What time zone is there? ")) # TODO: make it look for the time zones in the internet
+    timezone0 = int(input("What time zone is there? "))
     return timezone0
 
 # Computes the take off hour
